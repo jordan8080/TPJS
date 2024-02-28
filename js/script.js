@@ -3,11 +3,17 @@ window.addEventListener("load", function () {
   const forfaits = document.querySelectorAll('#ecran1 .card');
   const options = document.querySelectorAll('#ecran3 .card');
   let optionSelectionnePrecedent = null;
+  const duplique = document.getElementById('duplique');
+  const auto = document.getElementById('96h');
+  const duo = document.getElementById('duo');
 
   const btOk = document.getElementById('btEcran1');
   const btOk2 = this.document.getElementById('btEcran2');
   let forfaitSelectionnePrecedent = null;
   let nbrAnnonce = document.getElementById('inputNb');
+
+
+
 
   document.getElementById("ecran2").style.display = "none";
   document.getElementById("ecran3").style.display = "none";
@@ -66,6 +72,7 @@ window.addEventListener("load", function () {
       }
     });
   });
+
 
   nbrAnnonce.addEventListener('input', function () {
     let annonce = parseFloat(nbrAnnonce.value);
